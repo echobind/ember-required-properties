@@ -1,5 +1,5 @@
 {
-  "name": "ember-required-params",
+  "name": "ember-required-properties",
   "description": "The default blueprint for ember-cli addons.",
   "version": "0.0.0",
   "options": {

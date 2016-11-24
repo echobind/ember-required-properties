@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-required-params'
+  name: 'ember-required-properties'
 };
