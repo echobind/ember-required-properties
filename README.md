@@ -1,4 +1,12 @@
-# Ember Required Properties
+# ember-required-properties
+
+[![CircleCI](https://circleci.com/gh/echobind/ember-required-properties.svg?style=svg)](https://circleci.com/gh/echobind/ember-required-properties)
+[![npm version](https://badge.fury.io/js/ember-required-properties.svg)](http://badge.fury.io/js/ember-required-properties)
+[![Code Climate](https://codeclimate.com/github/echobind/ember-required-properties/badges/gpa.svg)](https://codeclimate.com/github/echobind/ember-required-properties)
+[![Dependency Status](https://david-dm.org/echobind/ember-required-properties.svg)](https://david-dm.org/echobind/ember-required-properties)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-required-properties.svg)](http://emberobserver.com/addons/ember-required-properties)
+
+## Features
 
 This addon enables the following pattern:
 
