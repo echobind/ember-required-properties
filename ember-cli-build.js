@@ -1,10 +1,33 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+var postcssImport = require('postcss-import');
+var cssnext = require('postcss-cssnext');
 
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {
-    // Add options here
+    postcssOptions: {
+      compile: {
+        enabled: true,
+        plugins: [
+          {
+            module: postcssImport,
+            options: {}
+          }
+        ]
+      },
+      filter: {
+        enabled: true,
+        plugins: [
+          {
+            module: cssnext,
+            options: {
+              browsers: ['last 2 version']
+            }
+          }
+        ]
+      }
+    }
   });
 
   /*
