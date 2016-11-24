@@ -1,16 +1,16 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import assertRequiredProperties from 'ember-required-properties/utils/assert-required-properties';
-import Component from 'ember-component';
+import EmberObject from 'ember-object';
 
-const EXPECTED_ERROR = 'You must pass name to (subclass of Ember.Component)';
-const MyComponent = Component.extend({
+const EXPECTED_ERROR = 'You must pass name to (unknown mixin)';
+const MyThing = EmberObject.extend({
   requiredProperties: ['name']
 });
 
 describe('Unit | Utility | assert required properties', function() {
   describe('without required properties', function() {
-    let componentInstance = MyComponent.create();
+    let componentInstance = MyThing.create();
 
     it('throws an error if not provided on the component', function() {
       expect(() => {
@@ -20,7 +20,7 @@ describe('Unit | Utility | assert required properties', function() {
   });
 
   describe('without required properties', function() {
-    let componentInstance = MyComponent.create({
+    let componentInstance = MyThing.create({
       name: 'Dave'
     });
 
