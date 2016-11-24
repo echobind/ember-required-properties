@@ -41,20 +41,20 @@ Now if you fail to pass all of the required properties you will get an error.
 
 NOTE: since we use `Ember.assert` to throw errors, production will silently fail.
 
-## Legal
-[Echobind](https://echobind.com?utm_source=github-legal) LLC (c) 2016
-[@echobind][twitter]
-[Licensed under the MIT license][MIT]
 
 ## About Echobind
 
 ![Echobind](https://echobind.s3.amazonaws.com/images/echobind-logo-black.svg)
 
-Ember Required Properties is maintained and funded by Echobind.
-
+Ember Required Properties is maintained and funded by Echobind.<br>
 [@echobind][twitter]
 
 We love open source! See [our other projects][community] or [hire us][hire] to help bring your idea to life.
+
+## Legal
+[Echobind](https://echobind.com) LLC (c) 2016 <br>
+[@echobind](https://twitter.com/echobind) <br>
+[Licensed under the MIT license](http://www.opensource.org/licenses/mit-license.php)
 
 [twitter]: https://twitter.com/echobind
 [community]: https://github.com/echobind
