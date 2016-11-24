@@ -1,27 +1,62 @@
-# Ember-required-params
+# Ember Required Properties
 
-This README outlines the details of collaborating on this Ember addon.
+This addon enables the following pattern:
+
+```js
+// some-component
+export default Component.extend(RequiredProperties, {
+  requiredProperties: ['thing', 'another', 'on-select-thing']  
+});
+```
+
+```hbs
+{{some-component}}
+```
+
+```sh
+ERROR: You must provide thing, another, and on-select-thing to some-component.
+```
+
+Like `ember-prop-types`, this addon helps ensure required properties are passed to components. This addon is intended to be a much smaller building block. It only verifies required properties are present, not that they are of the correct type.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-required-params`
-* `npm install`
-* `bower install`
+```
+ember install ember-required-properties
+```
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+Import the mixin anywhere you want to require properties:
 
-## Running Tests
+```
+import RequiredProperties from 'ember-required-properties'
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+export Component.extend(RequiredProperties, {
+  requiredProperties: ['one', 'two']
+});
+```
 
-## Building
+Now if you fail to pass all of the required properties you will get an error.
 
-* `ember build`
+NOTE: since we use `Ember.assert` to throw errors, production will silently fail.
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+## Legal
+[Echobind](https://echobind.com?utm_source=github-legal) LLC (c) 2016
+[@echobind][twitter]
+[Licensed under the MIT license][MIT]
+
+## About Echobind
+
+![Echobind](https://echobind.s3.amazonaws.com/images/echobind-logo-black.svg)
+
+Ember Required Properties is maintained and funded by Echobind.
+
+[@echobind][twitter]
+
+We love open source! See [our other projects][community] or [hire us][hire] to help bring your idea to life.
+
+[twitter]: https://twitter.com/echobind
+[community]: https://github.com/echobind
+[hire]: https://echobind.com?utm_source=github-hire
+[MIT]: http://www.opensource.org/licenses/mit-license.php
