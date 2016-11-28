@@ -1,6 +1,6 @@
 import get from 'ember-metal/get';
 import { assert } from 'ember-metal/utils';
-import { isEmpty } from 'ember-utils';
+import { isEmpty, isNone } from 'ember-utils';
 import arrayToSentence from './array-to-sentence';
 
 /**
@@ -21,7 +21,7 @@ export default function assertRequiredProperties(object) {
 
   let definedProperties = requiredProperties.filter((a) => {
     let providedValue = get(object, a);
-    return typeof(providedValue) !== 'undefined';
+    return !isNone(providedValue);
   });
 
   let hasRequiredProperties = definedProperties.length === requiredProperties.length;
