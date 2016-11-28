@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:echobind/ember-links-with-follower.git"
+    "url": "git@github.com:echobind/ember-required-properties.git"
   },
-  "author": "",
+  "author": "Chris Ball <chris@echobind.com>",
   "engines": {
     "node": ">= 0.12.0"
   },
