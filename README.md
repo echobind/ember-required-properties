@@ -38,7 +38,7 @@ ember install ember-required-properties
 Import the mixin anywhere you want to require properties:
 
 ```
-import RequiredProperties from 'ember-required-properties'
+import RequiredProperties from 'ember-required-properties/mixins/required-properties';
 
 export Component.extend(RequiredProperties, {
   requiredProperties: ['one', 'two']
