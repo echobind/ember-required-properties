@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git@github.com:echobind/ember-required-properties.git"
   },
-  "author": "Chris Ball <chris@echobind.com>",
+  "author": "",
   "engines": {
     "node": ">= 0.12.0"
   },
