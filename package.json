@@ -1,6 +1,6 @@
 {
   "name": "ember-required-properties",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Enforce required properties on components or other objects via a simple-mixin.",
   "directories": {
     "doc": "doc",
@@ -13,13 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:echobind/ember-links-with-follower.git"
+    "url": "git@github.com:echobind/ember-required-properties.git"
   },
   "author": "Chris Ball <chris@echobind.com>",
   "engines": {
     "node": ">= 0.12.0"
   },
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
