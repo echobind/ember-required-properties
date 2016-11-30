@@ -1,6 +1,6 @@
 {
   "name": "ember-required-properties",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Enforce required properties on components or other objects via a simple-mixin.",
   "directories": {
     "doc": "doc",

@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.1.1](https://github.com/echobind/ember-required-properties/tree/v0.1.1) (2016-11-28)
+[Full Changelog](https://github.com/echobind/ember-required-properties/compare/v0.1.0...v0.1.1)
+
+**Merged pull requests:**
+
+- Fix package repo, adds CHANGELOG to source control [\#7](https://github.com/echobind/ember-required-properties/pull/7) ([cball](https://github.com/cball))
+
 ## [v0.1.0](https://github.com/echobind/ember-required-properties/tree/v0.1.0) (2016-11-28)
 **Merged pull requests:**
 
