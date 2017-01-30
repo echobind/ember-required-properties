@@ -1,6 +1,18 @@
 # Change Log
 
-## [v0.1.1](https://github.com/echobind/ember-required-properties/tree/v0.1.1) (2016-11-28)
+## [v0.1.2](https://github.com/echobind/ember-required-properties/tree/v0.1.2) (2017-01-30)
+[Full Changelog](https://github.com/echobind/ember-required-properties/compare/v0.1.1...v0.1.2)
+
+**Fixed bugs:**
+
+- Dont use string.includes since IE doesnt support it [\#10](https://github.com/echobind/ember-required-properties/pull/10) ([cball](https://github.com/cball))
+
+**Merged pull requests:**
+
+- Add missing syntax highlight [\#9](https://github.com/echobind/ember-required-properties/pull/9) ([knownasilya](https://github.com/knownasilya))
+- Released v0.1.1 [\#8](https://github.com/echobind/ember-required-properties/pull/8) ([cball](https://github.com/cball))
+
+## [v0.1.1](https://github.com/echobind/ember-required-properties/tree/v0.1.1) (2016-11-29)
 [Full Changelog](https://github.com/echobind/ember-required-properties/compare/v0.1.0...v0.1.1)
 
 **Merged pull requests:**
