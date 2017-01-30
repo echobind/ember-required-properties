@@ -39,7 +39,7 @@ export default function assertRequiredProperties(object) {
  */
 function _getClassName(object) {
   let constructorString = object.constructor.toString();
-  if (constructorString.includes(':')) {
+  if (constructorString.indexOf(':') > -1) {
     let [, classNameFromModule] = constructorString.split(':');
     return classNameFromModule;
   }
