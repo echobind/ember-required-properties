@@ -26,7 +26,7 @@ export default function assertRequiredProperties(object) {
 
   let hasRequiredProperties = definedProperties.length === requiredProperties.length;
 
-  assert(`You must pass ${propertySentence} to ${className}`, hasRequiredProperties);
+  assert(`You must pass ${propertySentence} to {{${className}}}`, hasRequiredProperties);
 }
 
 /**
