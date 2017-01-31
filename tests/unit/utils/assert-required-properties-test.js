@@ -3,7 +3,7 @@ import { describe, it } from 'mocha';
 import assertRequiredProperties from 'ember-required-properties/utils/assert-required-properties';
 import EmberObject from 'ember-object';
 
-const EXPECTED_ERROR = 'You must pass name to (unknown mixin)';
+const EXPECTED_ERROR = 'You must pass `name` to {{(unknown mixin)}}';
 const MyThing = EmberObject.extend({
   requiredProperties: ['name']
 });
