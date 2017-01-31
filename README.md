@@ -22,7 +22,7 @@ export default Component.extend(RequiredProperties, {
 ```
 
 ```sh
-ERROR: You must provide thing, another, and on-select-thing to some-component.
+ERROR: You must provide `thing`, `another`, and `on-select-thing` to {{some-component}}.
 ```
 
 Like `ember-prop-types`, this addon helps ensure required properties are passed to components. This addon is intended to be a much smaller building block. It only verifies required properties are present, not that they are of the correct type.
