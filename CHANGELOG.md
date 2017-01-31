@@ -1,5 +1,17 @@
 # Change Log
 
+## [v0.2.0](https://github.com/echobind/ember-required-properties/tree/v0.2.0) (2017-01-31)
+[Full Changelog](https://github.com/echobind/ember-required-properties/compare/v0.1.2...v0.2.0)
+
+**Closed issues:**
+
+- add some flare to error message  [\#12](https://github.com/echobind/ember-required-properties/issues/12)
+
+**Merged pull requests:**
+
+- Stylize error message [\#13](https://github.com/echobind/ember-required-properties/pull/13) ([JackCA](https://github.com/JackCA))
+- Released v0.1.2 [\#11](https://github.com/echobind/ember-required-properties/pull/11) ([cball](https://github.com/cball))
+
 ## [v0.1.2](https://github.com/echobind/ember-required-properties/tree/v0.1.2) (2017-01-30)
 [Full Changelog](https://github.com/echobind/ember-required-properties/compare/v0.1.1...v0.1.2)
 
