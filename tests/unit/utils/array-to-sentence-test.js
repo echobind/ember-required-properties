@@ -8,7 +8,7 @@ describe('Unit | Utility | array to sentence', function() {
     let result = arrayToSentence(array);
 
     it('formats things properly', function() {
-      expect(result).to.equal('what, the, and attrs');
+      expect(result).to.equal('`what`, `the`, and `attrs`');
     });
   });
 
@@ -17,7 +17,7 @@ describe('Unit | Utility | array to sentence', function() {
     let result = arrayToSentence(array, { separator: '-' });
 
     it('formats things properly', function() {
-      expect(result).to.equal('what- the- and attrs');
+      expect(result).to.equal('`what`- `the`- and `attrs`');
     });
   });
 
@@ -26,7 +26,7 @@ describe('Unit | Utility | array to sentence', function() {
     let result = arrayToSentence(array, { lastSeparator: '-' });
 
     it('formats things properly', function() {
-      expect(result).to.equal('what, the, - attrs');
+      expect(result).to.equal('`what`, `the`, - `attrs`');
     });
   });
 
@@ -35,7 +35,7 @@ describe('Unit | Utility | array to sentence', function() {
     let result = arrayToSentence(array, { lastSeparator: '-' });
 
     it('formats things properly', function() {
-      expect(result).to.equal('hi');
+      expect(result).to.equal('`hi`');
     });
   });
 
@@ -44,7 +44,7 @@ describe('Unit | Utility | array to sentence', function() {
     let result = arrayToSentence(array, { separator: '!' });
 
     it('formats things properly', function() {
-      expect(result).to.equal('hi and there');
+      expect(result).to.equal('`hi` and `there`');
     });
   });
 });

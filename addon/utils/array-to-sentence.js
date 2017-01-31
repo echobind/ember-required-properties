@@ -20,8 +20,17 @@ export default function arrayToSentence(array, { separator = ',', lastSeparator 
  */
 function _singleItemSentence(array) {
   if (array.length === 1) {
-    return array[0];
+    return _formatItem(array[0]);
   }
+}
+
+/**
+ * Returns a formatted string for an item in the array.
+ * @method
+ * @private
+ */
+function _formatItem(item) {
+  return `\`${item}\``;
 }
 
 /**
@@ -31,7 +40,7 @@ function _singleItemSentence(array) {
  */
 function _twoItemSentence(array, separator, lastSeparator) {
   if (array.length === 2) {
-    return `${array[0]} ${lastSeparator} ${array[1]}`;
+    return `${_formatItem(array[0])} ${lastSeparator} ${_formatItem(array[1])}`;
   }
 }
 
@@ -41,8 +50,8 @@ function _twoItemSentence(array, separator, lastSeparator) {
  * @private
  */
 function _multipleItemSentence(array, separator, lastSeparator) {
-  let firstPart = array.slice(0, -1).join(`${separator} `);
-  let lastPart = array[array.length - 1];
+  let firstPart = array.slice(0, -1).map(_formatItem).join(`${separator} `);
+  let lastPart = _formatItem(array[array.length - 1]);
 
   return `${firstPart}${separator} ${lastSeparator} ${lastPart}`;
 }
